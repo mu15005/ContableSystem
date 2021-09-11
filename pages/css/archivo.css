@@ -1,0 +1,101 @@
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+ font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: line;
+  width: 32.9%;
+  border: none;
+  background:none;
+  border-bottom: 3px solid #5264AE;
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__field1 {
+ font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: line;
+  width: 99.9%;
+  border: none;
+  background:none;
+  border-bottom: 3px solid #5264AE;
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+.form__field2{
+ font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: line;
+  width: 40.9%;
+  border: none;
+  background:none;
+  border-bottom: 3px solid #5264AE;
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+.form__label {
+  position: absolute;
+  top: -2px;
+
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+.form__label1 {
+position: absolute;
+
+ top: 1;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+   
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;
+  border-bottom: 2px solid teal;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* demo */
